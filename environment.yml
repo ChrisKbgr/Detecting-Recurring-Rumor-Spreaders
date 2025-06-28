@@ -1,0 +1,23 @@
+name: rumor_detection
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pandas>=1.5.0
+  - numpy>=1.21.0
+  - scikit-learn>=1.1.0
+  - matplotlib>=3.5.0
+  - seaborn>=0.11.0
+  - tqdm>=4.64.0
+  - python-dateutil>=2.8.0
+  - jupyter>=1.0.0
+  - ipykernel>=6.0.0
+  - notebook>=6.4.0
+  - pip
+  - pip:
+    - torch>=1.12.0
+    - torch-geometric>=2.2.0
+    - transformers>=4.20.0
+    - tokenizers>=0.13.0 
