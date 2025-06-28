@@ -87,29 +87,9 @@ This will:
 
 ## Model Architecture
 
-The proposed model uses a **GraphSAGE** architecture with:
-
-- **3 GraphSAGE layers** with 128 hidden units
-- **Batch normalization** and **ReLU activation**
-- **Dropout (0.2)** for regularization
-- **Focal loss** to handle class imbalance
-- **Adam optimizer** with learning rate 0.003
+The proposed model uses a **GraphSAGE** architecture:
 
 ![GNN Architecture](graphviz.png)
-
-### Graph Construction
-
-The model constructs a heterogeneous graph where:
-- **Nodes**: Users with engineered features
-- **Edges**: Social connections (replies/retweets) + k-nearest neighbors in feature space
-- **Features**: 11 behavioral and network characteristics
-
-### Key Features
-
-- Total tweets, average tweet length, sentiment scores
-- Activity duration, response times, engagement rates
-- Network metrics: degree, clustering coefficient
-- Rumor ratio and event participation
 
 ## Results
 
