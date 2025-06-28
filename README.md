@@ -12,6 +12,8 @@ This project uses the **PHEME dataset** which contains annotated Twitter threads
 
 **Dataset Source**: [PHEME Dataset on Kaggle](https://www.kaggle.com/datasets/usharengaraju/pheme-dataset)
 
+**Setup**: Download and extract the dataset to the `pheme_dataset/` folder in the project directory.
+
 ## Problem Definition
 
 We define a **recurring rumor spreader** as a user who:
@@ -92,6 +94,8 @@ The proposed model uses a **GraphSAGE** architecture with:
 - **Dropout (0.2)** for regularization
 - **Focal loss** to handle class imbalance
 - **Adam optimizer** with learning rate 0.003
+
+![GNN Architecture](graphviz.png)
 
 ### Graph Construction
 
